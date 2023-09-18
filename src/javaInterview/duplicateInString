@@ -17,6 +17,13 @@ public class DuplicateInString {
 				map.put(c1, 1);
 		}
 		System.out.println(map);
+
+//It will only print the characters which are duplicate
+             map.forEach((key,value) -> {
+	      if(value > 1){
+	           System.out.println("Key : " + key + " Value : " + value);
+	      }
+	  });
 	}
 
 }
