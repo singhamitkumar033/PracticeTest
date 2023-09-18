@@ -18,6 +18,13 @@ public static void main(String[] args) {
 	map.forEach((key, value) -> {
 	    System.out.println("Key : " + key + " Value : " + value);
 	});
+
+	// It will only display the characters which are duplicates, it is very easy and less complex.
+	 map.forEach((key,value) -> {
+	      if(value > 1){
+	           System.out.println("Key : " + key + " Value : " + value);
+	      }
+	  });
 	
 	int[] intarr= {1,4,8,1,7};
 	Arrays.sort(intarr);
